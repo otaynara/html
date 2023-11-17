@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos Turísticos em São Paulo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Pontos Turísticos em São Paulo</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2><a href="ibirapuera.html">Parque Ibirapuera</a></h2>
+            <a href="ibirapuera.html"><img src="ibirapuera.jpg" alt="Parque Ibirapuera"></a>
+            <p>O Parque Ibirapuera é um dos principais parques urbanos de São Paulo. Inaugurado em 1954, é uma
+                ampla área verde que oferece diversas opções de lazer e cultura. Com lagos, ciclovia, museus e
+                espaços para atividades ao ar livre, o Ibirapuera é um refúgio no coração da cidade.</p>
+        </section>
+
+        <section>
+            <h2><a href="jardimbotanico.html">Jardim Botânico</a></h2>
+            <a href="jardimbotanico.html"><img src="jardimbotanico.jpg" alt="Jardim Botânico"></a>
+            <p>O Jardim Botânico de São Paulo é um lugar encantador, dedicado à preservação da flora brasileira. Com
+                trilhas, estufas e uma variedade de plantas, é um local perfeito para apreciar a natureza e relaxar.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pont
