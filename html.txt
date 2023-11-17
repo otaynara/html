@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Exemplos HTML">
+    <meta name="keywords" content="HTML, Exemplo">
+    <meta name="author" content="Seu Nome">
+    <title>Exemplos HTML</title>
+</head>
+<body>
+    <!-- Metadados -->
+    <h1>Metadados</h1>
+    <p>Exemplo de uso de metadados em HTML.</p>
+
+    <!-- Separar Conteúdo -->
+    <h1>Separar Conteúdo</h1>
+    <div id="cabecalho">
+        <h2>Meu Site</h2>
+    </div>
+    <div id="conteudo">
+        <p>Conteúdo da página vai aqui.</p>
+    </div>
+    <div id="rodape">
+        <p>Rodapé do site.</p>
+    </div>
+
+    <!-- Texto -->
+    <h1>Texto</h1>
+    <h2>Título Principal</h2>
+    <p>Isso é um parágrafo de texto. <em>Isso é um texto enfatizado.</em></p>
+    <h3>Subtítulo</h3>
+    <p>Outro parágrafo de texto aqui.</p>
+
+    <!-- Imagem -->
+    <h1>Imagem</h1>
+    <p>Exemplos de imagens:</p>
+    <img src="exemplo-imagem.jpg" alt="Descrição da Imagem 1">
+    <img src="outra-imagem.png" alt="Descrição da Imagem 2">
+
+    <!-- Formulário -->
+    <h1>Formulário</h1>
+    <h2>Meu Formulário</h2>
+    <form action="/processar" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Outro Formulário</h2>
+    <form action="/outra-rota" method="post">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
