@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de CSS</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Site</h1>
+    </header>
+
+    <section>
+        <p>Bem-vindo ao meu site! Este é um exemplo simples de HTML e CSS.</p>
+    </section>
+
+    <section>
+        <h2>Minha Lista</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </section>
+
+</body>
+</html> 
+nester exemplo o CSS,esta incorporado no elemento <style> dentro da tag <head>. Isso torna o código mais compacto, mas pode ser menos eficiente se você tiver muitas páginas
+compartilhando o mesmo estilo. Em projetos maiores, é comum manter o CSS em um arquivo separado (como no exemplo anterior) para facilitar a manutenção e reutilização do código.
