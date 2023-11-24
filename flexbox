@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento Movível</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="movable-element"></div>
+    </div>
+
+</body>
+</html>
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 2px solid #333;
+}
+
+.movable-element {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    cursor: grab;
+}
+
+.movable-element:active {
+    cursor: grabbing;
+}
+
