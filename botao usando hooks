@@ -1,0 +1,54 @@
+import React, { useState } from 'react';
+
+function App() {
+  // Definindo o estado inicial da propriedade
+  const [contador, setContador] = useState(0);
+
+  // Função que aumenta o valor da propriedade
+  const aumentarContador = () => {
+    setContador(contador + 1);
+  };
+
+  return (
+    <div>
+      <p>Valor do contador: {contador}</p>
+      <button onClick={aumentarContador}>Aumentar</button>
+    </div>
+  );
+}
+
+export default App;
+
+
+Vamos criar um botão usando o React com hooks que aumenta o valor de uma propriedade em um componente. Para isso, usaremos o hook useState para gerenciar o estado do componente.
+
+Aqui está um exemplo:
+
+jsx
+Copy code
+import React, { useState } from 'react';
+
+function App() {
+  // Definindo o estado inicial da propriedade
+  const [contador, setContador] = useState(0);
+
+  // Função que aumenta o valor da propriedade
+  const aumentarContador = () => {
+    setContador(contador + 1);
+  };
+
+  return (
+    <div>
+      <p>Valor do contador: {contador}</p>
+      <button onClick={aumentarContador}>Aumentar</button>
+    </div>
+  );
+}
+
+export default App;
+Neste exemplo:
+
+useState é usado para criar o estado contador com um valor inicial de 0.
+aumentarContador é uma função que, quando chamada, utiliza setContador para incrementar o valor do estado contador.
+Um parágrafo exibe o valor atual do contador.
+Um botão é renderizado, e quando clicado, chama a função aumentarContador
