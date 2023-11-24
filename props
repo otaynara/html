@@ -1,0 +1,31 @@
+// src/App.js
+import React from 'react';
+import './App.css';
+
+// Função que retorna uma mensagem
+const obterMensagem = () => {
+  return "Esta é a mensagem da função em App.js!";
+};
+
+// Componente que recebe uma propriedade e exibe a mensagem
+const Mensagem = (props) => {
+  return (
+    <div>
+      <p>{props.mensagemPropria}</p>
+    </div>
+  );
+};
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Olá, Mundo!</h1>
+        <p>{obterMensagem()}</p>
+        <Mensagem mensagemPropria="Esta é uma mensagem da propriedade!" />
+      </header>
+    </div>
+  );
+}
+
+export default App;
