@@ -1,0 +1,97 @@
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+const Home = () => {
+  return <h2>Tela Inicial</h2>;
+};
+
+const Detalhes = ({ match }) => {
+  return <h2>Detalhes da Tela {match.params.id}</h2>;
+};
+
+const App = () => {
+  return (
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/detalhes/1">Detalhes 1</Link>
+            </li>
+            <li>
+              <Link to="/detalhes/2">Detalhes 2</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Route path="/" exact component={Home} />
+        <Route path="/detalhes/:id" component={Detalhes} />
+      </div>
+    </Router>
+  );
+};
+
+export default App;
+
+
+
+Para criar um componente com roteamento entre telas em React, você pode usar a biblioteca react-router-dom. Vamos instalar a biblioteca e criar um exemplo simples com duas telas: uma tela inicial e uma tela de detalhes.
+
+Passo 1: Instalar o react-router-dom
+bash
+Copy code
+npm install react-router-dom
+Passo 2: Criar o componente com roteamento
+Aqui está o código para um componente chamado App que possui roteamento entre duas telas:
+
+jsx
+Copy code
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+const Home = () => {
+  return <h2>Tela Inicial</h2>;
+};
+
+const Detalhes = ({ match }) => {
+  return <h2>Detalhes da Tela {match.params.id}</h2>;
+};
+
+const App = () => {
+  return (
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/detalhes/1">Detalhes 1</Link>
+            </li>
+            <li>
+              <Link to="/detalhes/2">Detalhes 2</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Route path="/" exact component={Home} />
+        <Route path="/detalhes/:id" component={Detalhes} />
+      </div>
+    </Router>
+  );
+};
+
+export default App;
+Neste exemplo:
+
+Home é um componente funcional que representa a tela inicial.
+Detalhes é um componente funcional que representa a tela de detalhes, usando match.params.id para obter o parâmetro da URL.
+Link é usado para criar links de navegação entre as telas.
+BrowserRouter é usado como o componente principal para fornecer o roteamento.
+Route é usado para renderizar componentes com base nos caminhos da URL.
