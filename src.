@@ -1,0 +1,23 @@
+// src/App.js
+import React from 'react';
+import './App.css';
+
+// Função que retorna uma mensagem
+const obterMensagem = () => {
+  return "Esta é a mensagem da função em App.js!";
+};
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Olá, Mundo!</h1>
+        <p>{obterMensagem()}</p>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+
